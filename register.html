@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  body{
+    background-color: lightblue;
+  }
+    input, button 
+    { 
+        width: 100%; 
+        padding: 10px; 
+        margin: 10px 0;
+      border-radius: 5px; 
+      border: 1px solid #ccc; 
+    }
+    button { 
+        background: #2980b9; 
+        color: white; 
+        border: none; 
+        cursor: pointer; 
+    }
+    button:hover 
+    { 
+        background: #1a5980; 
+    }
+    h2 { 
+        text-align: center; 
+        color:black; 
+    }
+    .container { 
+        max-width: 400px; 
+        margin: 100px auto; 
+        background: white;
+        padding: 20px; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    }
+
+  </style>
+</head>
+<body>
+    <!-- Registration Form -->
+<div class="container" id="registerBox">
+  <h2>Student Registration</h2>
+  <input type="text" id="regName" placeholder="Full Name" required>
+   <input type="number" id="regRollno" placeholder="HallTicket Number" required>
+  <input type="number" id="regmobile" placeholder="mobile Number" required>
+  <input type="email" id="regEmail" placeholder="Email" required>
+  <input type="password" id="regPass" placeholder="Password" required>
+  <label>Upload Photo</label>
+  <input type="file" id="regPhoto" accept=".pdf, .doc" required>
+   <label>Upload Resume :</label>
+  <input type="file" id="regResume" accept=".pdf, .doc, .docx" required>
+   <button onclick="register()">Register</button>
+  <p style="text-align:center;">Already registered? 
+    <a href="./login.html">Login here</a>
+  </p>
+</div>
+
+<script>
+
+  // Register student (saved in localStorage)
+  function register() {
+    let name = document.getElementById("regName").value;
+    let rollno=document.getElementById("regRollno").value
+    let email = document.getElementById("regEmail").value;
+    let pass = document.getElementById("regPass").value;
+    let mobile=document.getElementById("regmobile").value;
+    let photo=document.getElementById("regPhoto").value
+    let resume=document.getElementById("regResume").value;
+  }
+  </script>
+</body>
+</html>

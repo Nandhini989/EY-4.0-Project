@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlacementHub</title>
+  <style>
+    body{
+                background: lightblue; 
+
+    }
+    input, button 
+    { 
+        width: 100%; 
+        padding: 10px; 
+        margin: 10px 0;
+      border-radius: 5px; 
+      border: 1px solid #ccc; 
+    }
+    button { 
+        background: #2980b9; 
+        color: white; 
+        border: none; 
+        cursor: pointer; 
+    }
+    button:hover 
+    { 
+        background: #1a5980; 
+    }
+    h2 { 
+        text-align: center; 
+        color: black; 
+    }
+    .container { 
+        max-width: 400px; 
+        margin: 100px auto; 
+        background: white;
+      padding: 20px; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    }
+  </style>
+
+<!-- Login Form -->
+<div class="container hidden" id="loginBox">
+  <h2>Student Login</h2>
+  <input type="email" id="loginEmail" placeholder="Email" required><br>
+  <input type="password" id="loginPass" placeholder="Password" required><br>
+  <button onclick="login()">Login</button>
+  <p style="text-align:center;">No account? 
+    <a href="./register.html" onclick="showRegister()">Register here</a>
+  </p>
+</div>
+
+<script>
+
+  // Login student
+  function login() {
+    let email = document.getElementById("loginEmail").value;
+    let pass = document.getElementById("loginPass").value;
+
+    let storedEmail = localStorage.getItem("studentEmail");
+    let storedPass = localStorage.getItem("studentPass");
+
+  }
+
+
+</script>
+
+</body>
+</html>

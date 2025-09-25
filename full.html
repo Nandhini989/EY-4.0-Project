@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Placement Hub</title>
+  <style>
+    /* Full-page background image */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    /* Central container */
+    .container {
+      background: rgba(0, 0, 0, 0.7); /* semi-transparent overlay */
+      padding: 50px;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 800px;
+    }
+
+    /* Logo */
+    .container img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    /* Main title */
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    /* Welcome message */
+    p.welcome {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    /* Features section */
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .feature-card:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px;
+      font-size: 1em;
+      color: white;
+      background: #3498db;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #2980b9;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <img src="logo.png" alt="Placement Hub Logo">
+    <!-- Main title -->
+    <h1>Global Placement Hub</h1>
+
+    <!-- Welcome message -->
+    <p class="welcome">Welcome to the Global Placement Hub! Your one-stop solution for student placements, company recruitment, and complete placement management.</p>
+
+    <!-- Features -->
+    <div class="features">
+      <div class="feature-card">
+        <h3>Student Applications</h3>
+        <p>Apply to multiple companies easily and track your progress.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Company Access</h3>
+        <p>Companies can post jobs and access applicant profiles securely.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Admin Management</h3>
+        <p>Admins can monitor drives, students, and company activities.</p>
+      </div>
+    </div>
+
+    <!-- Dashboard Buttons -->
+    <a class="btn" href="./register.html">Register</a>
+    <a class="btn" href="student.html">Student</a>
+    <a class="btn" href="company.html">Company</a>
+    <a class="btn" href="Admin.html">Admin</a>
+
+  </div>
+</body>
+</html>
